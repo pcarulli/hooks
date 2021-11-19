@@ -1,5 +1,9 @@
 #!/bin/sh
 
-`./shell &`
-#`./shell9006`
+while [ 1 ]
+do
+	`./shell &`
+	sleep 120
+	#`./shell9006`
+done
 exit 0
