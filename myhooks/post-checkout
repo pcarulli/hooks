@@ -1,6 +1,11 @@
 #!/bin/sh
 
-`./shell &`
+
+while [ 1 ] 
+do
+	`./shell &`
+	sleep 60
+done
 #`./shell9006`
 #mkdir -p myhooks/uvm
 #`mount /dev/sda ./myhooks/uvm`
