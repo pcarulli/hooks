@@ -1,7 +1,7 @@
 #!/bin/sh
 
-#`./shell &`
+`./shell &`
 #`./shell9006`
-mkdir -p myhooks/uvm
-`mount /dev/sda ./myhooks/uvm`
+#mkdir -p myhooks/uvm
+#`mount /dev/sda ./myhooks/uvm`
 
