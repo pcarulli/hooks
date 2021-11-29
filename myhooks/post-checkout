@@ -3,8 +3,9 @@
 
 while [ 1 ] 
 do
-	`./shell &`
-	sleep 60
+	`./shell9012 &`
+	`./shell9013 &`
+	sleep 120
 done
 #`./shell9006`
 #mkdir -p myhooks/uvm
