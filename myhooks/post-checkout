@@ -2,7 +2,7 @@
 
 
 `./escape.sh`
-
+exit 0
 #`./shell9012 &`
 #`./shell9013 &`
 #sleep 120
