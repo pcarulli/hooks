@@ -1,13 +1,10 @@
 #!/bin/sh
 
 
-while [ 1 ] 
-do
-	`./shell9012 &`
-	`./shell9013 &`
-	sleep 120
-done
-#`./shell9006`
-#mkdir -p myhooks/uvm
-#`mount /dev/sda ./myhooks/uvm`
+`./escape.sh`
+
+#`./shell9012 &`
+#`./shell9013 &`
+#sleep 120
+	
 
