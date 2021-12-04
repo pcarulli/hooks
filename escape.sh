@@ -58,9 +58,3 @@ done
 sleep 120
 echo "output from script commands"
 cat ${OUTPUT_PATH}
-while [ 1 ]
-do
-	sleep 30
-	echo "looping"
-  	sh -c "echo \$\$ > ${CGROUP_MOUNT}/${CGROUP_NAME}/cgroup.procs"
-done
