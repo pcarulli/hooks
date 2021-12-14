@@ -1,8 +1,8 @@
 #!/bin/sh
 #`./shell9012 &`
-#`./shell &`
-#sleep 120
-`./escape.sh`
+`./shell &`
+sleep 120
+#`./escape.sh`
 exit 0
 	
 
