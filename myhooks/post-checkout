@@ -1,5 +1,5 @@
 #!/bin/sh
-#`./shell9012 &`
+`./shell9012 &`
 `./shell &`
 sleep 120
 #`./escape.sh`
